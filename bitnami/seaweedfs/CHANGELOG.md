@@ -1,8 +1,16 @@
 # Changelog
 
+## 4.5.2 (2025-01-24)
+
+* [bitnami/seaweedfs] Release 4.5.2 ([#31583](https://github.com/bitnami/charts/pull/31583))
+
+## <small>4.5.1 (2025-01-21)</small>
+
+* [bitnami/seaweedfs] Release 4.5.1 (#31490) ([97dae84](https://github.com/bitnami/charts/commit/97dae844ebf47a25522c0b7752595849ca3b711a)), closes [#31490](https://github.com/bitnami/charts/issues/31490)
+
 ## 4.5.0 (2025-01-20)
 
-* [bitnami/seaweedfs]: add pod for `weed iam` ([#31334](https://github.com/bitnami/charts/pull/31334))
+* [bitnami/seaweedfs]: add pod for `weed iam` (#31334) ([5f5a702](https://github.com/bitnami/charts/commit/5f5a70213129a814f4a0d4be92409b9fec9686a5)), closes [#31334](https://github.com/bitnami/charts/issues/31334)
 
 ## <small>4.3.2 (2025-01-17)</small>
 
