@@ -1,8 +1,33 @@
 # Changelog
 
-## 12.0.1 (2025-05-07)
+## 12.0.7 (2025-05-27)
 
-* [bitnami/redis-cluster] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references ([#33429](https://github.com/bitnami/charts/pull/33429))
+* [bitnami/redis-cluster] :zap: :arrow_up: Update dependency references ([#33912](https://github.com/bitnami/charts/pull/33912))
+
+## <small>12.0.6 (2025-05-22)</small>
+
+* [bitnami/redis-cluster] :zap: :arrow_up: Update dependency references (#33824) ([99dc338](https://github.com/bitnami/charts/commit/99dc338605e0328a3741af35a2dfe1a99a3d4e50)), closes [#33824](https://github.com/bitnami/charts/issues/33824)
+
+## <small>12.0.5 (2025-05-19)</small>
+
+* [bitnami/redis-cluster] :zap: :arrow_up: Update dependency references (#33747) ([850cd8f](https://github.com/bitnami/charts/commit/850cd8f2971737ed44ff3ae8f6b6a12357ca7a3f)), closes [#33747](https://github.com/bitnami/charts/issues/33747)
+
+## <small>12.0.4 (2025-05-15)</small>
+
+* [bitnami/redis-cluster] :zap: :arrow_up: Update dependency references (#33711) ([3e3c7be](https://github.com/bitnami/charts/commit/3e3c7be8f4412c762f3e9fcca875848b8a8bf9da)), closes [#33711](https://github.com/bitnami/charts/issues/33711)
+
+## <small>12.0.3 (2025-05-13)</small>
+
+* [bitnami/redis-cluster] :zap: :arrow_up: Update dependency references (#33667) ([09eb1d6](https://github.com/bitnami/charts/commit/09eb1d6ecdfa0408636e6246add1b5485db9a404)), closes [#33667](https://github.com/bitnami/charts/issues/33667)
+
+## <small>12.0.2 (2025-05-13)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/redis-cluster] :zap: :arrow_up: Update dependency references (#33649) ([d75776d](https://github.com/bitnami/charts/commit/d75776d265c727d7819af8d79d8ab408d4524d9e)), closes [#33649](https://github.com/bitnami/charts/issues/33649)
+
+## <small>12.0.1 (2025-05-07)</small>
+
+* [bitnami/redis-cluster] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references ( ([cdadc03](https://github.com/bitnami/charts/commit/cdadc03d3d4c232253c2a9ae0d5148a3d1c4a64e)), closes [#33429](https://github.com/bitnami/charts/issues/33429)
 
 ## 12.0.0 (2025-05-06)
 

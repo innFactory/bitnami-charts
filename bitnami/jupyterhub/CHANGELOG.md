@@ -1,8 +1,25 @@
 # Changelog
 
-## 9.0.7 (2025-05-07)
+## 9.0.11 (2025-05-21)
 
-* [jupyterhub] Fix singleuser image pull secrets ([#33176](https://github.com/bitnami/charts/pull/33176))
+* [bitnami/jupyterhub] :zap: :arrow_up: Update dependency references ([#33815](https://github.com/bitnami/charts/pull/33815))
+
+## <small>9.0.10 (2025-05-21)</small>
+
+* [bitnami/jupyterhub] :zap: :arrow_up: Update dependency references (#33814) ([d42683e](https://github.com/bitnami/charts/commit/d42683e754eefe34172058de6e35930166dc01ce)), closes [#33814](https://github.com/bitnami/charts/issues/33814)
+
+## <small>9.0.9 (2025-05-13)</small>
+
+* [bitnami/jupyterhub] :zap: :arrow_up: Update dependency references (#33656) ([89a0ed7](https://github.com/bitnami/charts/commit/89a0ed76c66020d0ab006db4b9dd1d6d6a27531b)), closes [#33656](https://github.com/bitnami/charts/issues/33656)
+
+## <small>9.0.8 (2025-05-12)</small>
+
+* [bitnami/jupyterhub] Init containers can be used with external PostgreSQL (#33582) ([58e80d9](https://github.com/bitnami/charts/commit/58e80d9805f0f6d7f5da29adf35efead9f7b28d9)), closes [#33582](https://github.com/bitnami/charts/issues/33582)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>9.0.7 (2025-05-07)</small>
+
+* [jupyterhub] Fix singleuser image pull secrets (#33176) ([95a3490](https://github.com/bitnami/charts/commit/95a34900e72996e02e0ba14bea719a6f7747e2c2)), closes [#33176](https://github.com/bitnami/charts/issues/33176)
 
 ## <small>9.0.6 (2025-05-06)</small>
 
