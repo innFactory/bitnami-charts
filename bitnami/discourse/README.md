@@ -1,6 +1,6 @@
 <!--- app-name: Discourse&reg; -->
 
-# Discourse(R) packaged by Bitnami
+# Discourse&reg; packaged by Bitnami
 
 Discourse is an open source discussion platform with built-in moderation and governance systems that let discussion communities protect themselves from bad actors even without official moderators.
 
@@ -21,8 +21,6 @@ Looking to use Discoursereg; in production? Try [VMware Tanzu Application Catalo
 This chart bootstraps a [Discourse](https://www.discourse.org/) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 It also packages [Bitnami Postgresql](https://github.com/bitnami/charts/tree/main/bitnami/postgresql) and [Bitnami Redis&reg;](https://github.com/bitnami/charts/tree/main/bitnami/redis) which are required as databases for the Discourse application.
-
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
 
 ## Prerequisites
 
