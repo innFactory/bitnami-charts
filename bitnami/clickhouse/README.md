@@ -14,6 +14,8 @@ Trademarks: This software listing is packaged by Bitnami. The respective tradema
 helm install my-release oci://registry-1.docker.io/bitnamicharts/clickhouse
 ```
 
+> Tip: Did you know that this app is also available as a Kubernetes App on the Azure Marketplace? Kubernetes Apps are the easiest way to deploy Bitnami on AKS. Click [here](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.clickhouse-cnab) to see the listing on Azure Marketplace.
+
 Looking to use ClickHouse in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
 ## Introduction
@@ -21,8 +23,6 @@ Looking to use ClickHouse in production? Try [VMware Tanzu Application Catalog](
 Bitnami charts for Helm are carefully engineered, actively maintained and are the quickest and easiest way to deploy containers on a Kubernetes cluster that are ready to handle production workloads.
 
 This chart bootstraps a [ClickHouse](https://github.com/clickhouse/clickhouse) Deployment in a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
-
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
 
 ## Prerequisites
 
@@ -265,7 +265,7 @@ The [Bitnami ClickHouse](https://github.com/bitnami/containers/tree/main/bitnami
 | `defaultInitContainers.volumePermissions.containerSecurityContext.runAsUser`                | Set runAsUser in "volume-permissions" init-containers' Security Context                                                                                                                                                                                                                                                                | `0`                        |
 | `defaultInitContainers.volumePermissions.containerSecurityContext.privileged`               | Set privileged in "volume-permissions" init-containers' Security Context                                                                                                                                                                                                                                                               | `false`                    |
 | `defaultInitContainers.volumePermissions.containerSecurityContext.allowPrivilegeEscalation` | Set allowPrivilegeEscalation in "volume-permissions" init-containers' Security Context                                                                                                                                                                                                                                                 | `false`                    |
-| `defaultInitContainers.volumePermissions.containerSecurityContext.capabilities.add`         | List of capabilities to be added in "volume-permissions" init-containers                                                                                                                                                                                                                                                               | `[]`                       |
+| `defaultInitContainers.volumePermissions.containerSecurityContext.capabilities.add`         | List of capabilities to be added in "volume-permissions" init-containers                                                                                                                                                                                                                                                               | `["CHOWN"]`                |
 | `defaultInitContainers.volumePermissions.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped in "volume-permissions" init-containers                                                                                                                                                                                                                                                             | `["ALL"]`                  |
 | `defaultInitContainers.volumePermissions.containerSecurityContext.seccompProfile.type`      | Set seccomp profile in "volume-permissions" init-containers                                                                                                                                                                                                                                                                            | `RuntimeDefault`           |
 | `defaultInitContainers.volumePermissions.resourcesPreset`                                   | Set ClickHouse Keeper "volume-permissions" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if defaultInitContainers.volumePermissions.resources is set (defaultInitContainers.volumePermissions.resources is recommended for production). | `nano`                     |
@@ -470,6 +470,7 @@ The [Bitnami ClickHouse](https://github.com/bitnami/containers/tree/main/bitnami
 | `persistentVolumeClaimRetentionPolicy.whenScaled`  | Volume retention behavior when the replica count of the StatefulSet is reduced | `Retain`              |
 | `persistentVolumeClaimRetentionPolicy.whenDeleted` | Volume retention behavior that applies when the StatefulSet is deleted         | `Retain`              |
 | `persistence.enabled`                              | Enable persistence using Persistent Volume Claims                              | `true`                |
+| `persistence.volumeName`                           | Name to assign the volume                                                      | `data`                |
 | `persistence.existingClaim`                        | Name of an existing PVC to use                                                 | `""`                  |
 | `persistence.storageClass`                         | Storage class of backing PVC                                                   | `""`                  |
 | `persistence.labels`                               | Persistent Volume Claim labels                                                 | `{}`                  |

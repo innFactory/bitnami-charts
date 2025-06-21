@@ -14,13 +14,13 @@ Disclaimer: Redis is a registered trademark of Redis Ltd. Any rights therein are
 helm install my-release oci://registry-1.docker.io/bitnamicharts/redis
 ```
 
+> Tip: Did you know that this app is also available as a Kubernetes App on the Azure Marketplace? Kubernetes Apps are the easiest way to deploy Bitnami on AKS. Click [here](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.redis-cnab) to see the listing on Azure Marketplace.
+
 Looking to use Redis&reg; in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
 ## Introduction
 
 This chart bootstraps a [Redis&reg;](https://github.com/bitnami/containers/tree/main/bitnami/redis) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
-
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
 
 ### Choose between Redis&reg; Helm Chart and Redis&reg; Cluster Helm Chart
 
@@ -993,6 +993,7 @@ helm install my-release --set master.persistence.existingClaim=PVC_NAME oci://RE
 | `metrics.serviceMonitor.port`                               | the service port to scrape metrics from                                                                                                                                                                                           | `http-metrics`                   |
 | `metrics.serviceMonitor.enabled`                            | Create ServiceMonitor resource(s) for scraping metrics using PrometheusOperator                                                                                                                                                   | `false`                          |
 | `metrics.serviceMonitor.namespace`                          | The namespace in which the ServiceMonitor will be created                                                                                                                                                                         | `""`                             |
+| `metrics.serviceMonitor.tlsConfig`                          | TLS configuration used for scrape endpoints used by Prometheus                                                                                                                                                                    | `{}`                             |
 | `metrics.serviceMonitor.interval`                           | The interval at which metrics should be scraped                                                                                                                                                                                   | `30s`                            |
 | `metrics.serviceMonitor.scrapeTimeout`                      | The timeout after which the scrape is ended                                                                                                                                                                                       | `""`                             |
 | `metrics.serviceMonitor.relabelings`                        | Metrics RelabelConfigs to apply to samples before scraping.                                                                                                                                                                       | `[]`                             |
@@ -1006,6 +1007,7 @@ helm install my-release --set master.persistence.existingClaim=PVC_NAME oci://RE
 | `metrics.podMonitor.port`                                   | the pod port to scrape metrics from                                                                                                                                                                                               | `metrics`                        |
 | `metrics.podMonitor.enabled`                                | Create PodMonitor resource(s) for scraping metrics using PrometheusOperator                                                                                                                                                       | `false`                          |
 | `metrics.podMonitor.namespace`                              | The namespace in which the PodMonitor will be created                                                                                                                                                                             | `""`                             |
+| `metrics.podMonitor.tlsConfig`                              | TLS configuration used for scrape endpoints used by Prometheus                                                                                                                                                                    | `{}`                             |
 | `metrics.podMonitor.interval`                               | The interval at which metrics should be scraped                                                                                                                                                                                   | `30s`                            |
 | `metrics.podMonitor.scrapeTimeout`                          | The timeout after which the scrape is ended                                                                                                                                                                                       | `""`                             |
 | `metrics.podMonitor.relabelings`                            | Metrics RelabelConfigs to apply to samples before scraping.                                                                                                                                                                       | `[]`                             |
