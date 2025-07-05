@@ -20,8 +20,6 @@ Looking to use Confluent Schema Registry in production? Try [VMware Tanzu Applic
 
 This chart bootstraps a [Schema Registry](https://github.com/bitnami/containers/tree/main/bitnami/schema-registry) statefulset on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
-
 ## Prerequisites
 
 - Kubernetes 1.23+
@@ -363,12 +361,6 @@ For annotations, please see [this document](https://github.com/kubernetes/ingres
 | `networkPolicy.extraEgress`             | Add extra ingress rules to the NetworkPolicy                                                          | `[]`                     |
 | `networkPolicy.ingressNSMatchLabels`    | Labels to match to allow traffic from other namespaces                                                | `{}`                     |
 | `networkPolicy.ingressNSPodMatchLabels` | Pod labels to match to allow traffic from other namespaces                                            | `{}`                     |
-| `ingress.enabled`                       | Enable ingress controller resource                                                                    | `false`                  |
-| `ingress.hostname`                      | Default host for the ingress resource                                                                 | `schema-registry.local`  |
-| `ingress.annotations`                   | Ingress annotations                                                                                   | `{}`                     |
-| `ingress.extraHosts`                    | An array with additional hostname(s) to be covered with the ingress record                            | `[]`                     |
-| `ingress.extraTls`                      | TLS configuration for additional hostname(s) to be covered with this ingress record                   | `[]`                     |
-| `ingress.secrets`                       | Custom TLS certificates as secrets                                                                    | `[]`                     |
 | `ingress.enabled`                       | Enable ingress record generation for Schema Registry                                                  | `false`                  |
 | `ingress.pathType`                      | Ingress path type                                                                                     | `ImplementationSpecific` |
 | `ingress.apiVersion`                    | Force Ingress API version (automatically detected if not set)                                         | `""`                     |

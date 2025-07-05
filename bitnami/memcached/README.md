@@ -20,8 +20,6 @@ Looking to use Memcached in production? Try [VMware Tanzu Application Catalog](h
 
 This chart bootstraps a [Memcached](https://github.com/bitnami/containers/tree/main/bitnami/memcached) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
-
 ## Prerequisites
 
 - Kubernetes 1.23+
@@ -278,6 +276,7 @@ If you encounter errors when working with persistent volumes, refer to our [trou
 | `service.nodePorts.memcached`           | Node port for Memcached                                                                                       | `""`        |
 | `service.sessionAffinity`               | Control where client requests go, to the same pod or round-robin                                              | `""`        |
 | `service.sessionAffinityConfig`         | Additional settings for the sessionAffinity                                                                   | `{}`        |
+| `service.trafficDistribution`           | Traffic distribution preference                                                                               | `""`        |
 | `service.clusterIP`                     | Memcached service Cluster IP                                                                                  | `""`        |
 | `service.loadBalancerIP`                | Memcached service Load Balancer IP                                                                            | `""`        |
 | `service.loadBalancerSourceRanges`      | Memcached service Load Balancer sources                                                                       | `[]`        |

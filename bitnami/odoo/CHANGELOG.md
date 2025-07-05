@@ -1,8 +1,25 @@
 # Changelog
 
-## 28.2.3 (2025-05-06)
+## 28.2.7 (2025-07-05)
 
-* [bitnami/odoo] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references ([#33417](https://github.com/bitnami/charts/pull/33417))
+* [bitnami/odoo] :zap: :arrow_up: Update dependency references ([#34811](https://github.com/bitnami/charts/pull/34811))
+
+## <small>28.2.6 (2025-06-10)</small>
+
+* [bitnami/odoo] :zap: :arrow_up: Update dependency references (#34293) ([157643b](https://github.com/bitnami/charts/commit/157643b64f3ba12f9877c3d2807999043d7a07d6)), closes [#34293](https://github.com/bitnami/charts/issues/34293)
+
+## <small>28.2.5 (2025-06-08)</small>
+
+* [bitnami/odoo] :zap: :arrow_up: Update dependency references (#34254) ([8aa2c60](https://github.com/bitnami/charts/commit/8aa2c60571a39b7a96e48dfc74510972f35505b3)), closes [#34254](https://github.com/bitnami/charts/issues/34254)
+
+## <small>28.2.4 (2025-05-09)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/odoo] :zap: :arrow_up: Update dependency references (#33584) ([30eb91a](https://github.com/bitnami/charts/commit/30eb91ab3f92114c6381db532a6bbf9925f533ed)), closes [#33584](https://github.com/bitnami/charts/issues/33584)
+
+## <small>28.2.3 (2025-05-06)</small>
+
+* [bitnami/odoo] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33417) ([4a0c8c6](https://github.com/bitnami/charts/commit/4a0c8c63b7a5a55d105f66d634aefb773fc351e7)), closes [#33417](https://github.com/bitnami/charts/issues/33417)
 
 ## <small>28.2.2 (2025-04-09)</small>
 
